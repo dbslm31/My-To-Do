@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BsCheckLg } from "react-icons/bs";
 
 const EditTodoForm = ({ editTodo, task }) => {
   const [value, setValue] = useState(task.task);
@@ -19,7 +20,7 @@ const EditTodoForm = ({ editTodo, task }) => {
         value={value}
       />
       <button type="submit" className="todo-btn">
-        Modifier
+        <BsCheckLg className="checked-icon" />
       </button>
     </form>
   );

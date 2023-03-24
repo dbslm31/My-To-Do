@@ -7,7 +7,7 @@ const Todo = ({ task, toggleComplete, deleteTodo, editTodo }) => {
     <div className="todo">
       <p
         onClick={() => toggleComplete(task.id)}
-        className={`${task.completed ? "completed" : ""}`}
+        className={`${task.completed ? "completed" : "not-completed"}`}
       >
         {" "}
         {task.task}

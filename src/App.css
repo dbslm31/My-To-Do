@@ -1,8 +1,129 @@
+/*Style Library*/
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --darkgreen-bg:#050f14;
+  --green-bg : #98d3cc;
+  --yellow-bg : #e9c46a;
+  --orange-bg : #f4a261;
+  --pad-btn : 10px 15px;
+}
+
+
+
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
+
+h1 {
+  font-family: 'Unbounded', cursive;
+  color:#fff;
+}
+
+.App {
+  background-color: var(--darkgreen-bg);
+  border-radius: 20px;;
+  padding:3rem;
+  padding-right:4rem;
+}
+
+/*To-do Form*/
+
+.todo-form {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width:110%;
+}
+.todo-input {
+  background-color:#fff;
+  color: var(--darkgreen-bg);
+  width:105%;
+  padding : 15px 10px;
+  border-radius: 15px;
+  margin-bottom:1rem;
+  margin-right:1rem;
+  border:none;
+}
+
+.todo-input:focus-visible {
+  outline: 1px solid var(--green-bg);
+}
+
+.todo-btn {
+  margin-bottom:1rem;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 999px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 12px 0px;
+  width: 49px;
+  border: 1px solid #cae9ff;
+}
+
+.todo-btn:focus {
+  border: 1px solid #81c5f5;
+  outline: 0 solid transparent;
+}
+
+.plus-icon {
+  color:#fff;
+  cursor: pointer;
+}
+
+
+/*To-do*/
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:105%;
+  background-color:transparent;
+  color: #fff;
+  font-weight:500;
+  font-size:13px;
+  padding: 0px 10px;
+  border: 1px solid #cae9ff;
+  border-radius: 15px;
+  margin:20px 0;
+}
+
+.trash-icon {
+  margin-left:10px;
+  margin-right:10px;
+  cursor: pointer;
+}
+
+.pencil-icon {
+  cursor: pointer;
+}
+
+/* Modify Task */
+
+.checked-icon{
+  color:#fff;
+  cursor: pointer;
+}
+
+
+
+
 
 

@@ -47,11 +47,11 @@ const TodoWrapper = () => {
 
   return (
     <div className="todo-wrapper">
-      <h1></h1>
+      <h1>THE TO-DO 🔥 </h1>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo, index) =>
         todo.isEditing ? (
-          <EditTodoForm editTodo={editTask} task={todo} key={index} />
+          <EditTodoForm editTodo={editTask} task={todo} key={uuidv4} />
         ) : (
           <Todo
             task={todo}
